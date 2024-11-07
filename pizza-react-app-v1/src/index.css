@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f2ea;
+  color: #333;
+}
+
+h1 {
+  color: orange;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.search-bar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.search-bar input {
+  padding: 8px 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+.pizza {
+  display: flex;
+  flex-direction: column; /* Stack the content vertically */
+  align-items: center; /* Center-align the content horizontally */
+  gap: 10px; /* Adjust spacing between the elements */
+  border-bottom: 2px solid #ddd;
+  padding: 20px;
+  text-align: center; /* Center the text */
+  background-color:#f9f2ea; /* Add background to make it stand out */
+  border-radius: 8px; /* Rounded corners for a more polished look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow for depth */
+}
+
+.pizza img {
+  width: 120px; /* Image size */
+  height: auto;
+  border-radius: 8px;
+}
+
+.pizza h2 {
+  font-size: 24px; /* Title size */
+  font-weight: bold;
+  margin: 0; /* Remove extra margin */
+  text-transform: uppercase;
+}
+
+.pizza p {
+  font-size: 16px; /* Adjust paragraph text size */
+  margin: 5px 0;
+  color: #666;
+}
+
+.pizza .sold-out {
+  color: red; /* Highlight sold-out pizzas */
+  font-weight: bold;
+}
+
+.pizza .price {
+  color: #333;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #333;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center; 
+}
+
+.footer-text {
+  padding-top: 10px;
+}
+
+.bottom-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: orange;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px; 
+}
+
+.tagline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px; 
+}
+
+.tagline {
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+  color: #333;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.menu-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  z-index: 1; 
+}
+
+.menu-title::before,
+.menu-title::after {
+  content: '';
+  position: absolute;
+  width: 10%; 
+  height: 2px;
+  background-color: #333;
+}
+
+.menu-title::before {
+  top: -10px; 
+  left: 850px;
+}
+
+.menu-title::after {
+  bottom: -10px; 
+  right: 850px;
+}
